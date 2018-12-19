@@ -82,4 +82,11 @@ public abstract class ComprobanteElectronico {
     public void setClaveAcceso(String claveAcceso) {
         this.claveAcceso = claveAcceso;
     }
+
+    @Override
+    public String toString() {
+        return "ComprobanteElectronico{" + "detallesEmisor=" + detallesEmisor + ", nombreCliente=" + nombreCliente + ", codigo=" + codigo + ", fecha=" + fecha + ", numeroAutorizacion=" + numeroAutorizacion + ", claveAcceso=" + claveAcceso + '}';
+    }
+    
+    
 }

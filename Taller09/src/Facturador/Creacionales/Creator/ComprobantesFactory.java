@@ -15,25 +15,6 @@ import Facturador.Creacionales.NotaCredito;
  * @author Palacios
  */
 public abstract class ComprobantesFactory {
-    
-    public ComprobanteElectronico getComprobante(String tipoComprobante){
-      if(tipoComprobante == null){
-         return null;
-      }		
-      if(tipoComprobante.equalsIgnoreCase("FACTURA")){
-          CreatorFactura creatorFactura=new CreatorFactura();
-         return creatorFactura.getComprobante("FACTURA");
-         
-      } else if(tipoComprobante.equalsIgnoreCase("GUIAREMISION")){
-          CreatorGuiaRemision creatorguiaremision=new CreatorGuiaRemision();
-         return creatorguiaremision.getComprobante("GUIAREMISION");
-         
-      } else if(tipoComprobante.equalsIgnoreCase("NOTACREDITO")){
-          CreatorNotaCredito creatornotacredito=new CreatorNotaCredito();
-         return creatornotacredito.getComprobante("NOTACREDITO");
-      }
-      
-      return null;
-   }
+    public abstract ComprobanteElectronico getComprobante(String tipoComprobante);
     
 }

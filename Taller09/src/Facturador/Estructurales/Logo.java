@@ -3,24 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package comportamiento;
+package Facturador.Estructurales;
 
+import Facturador.Estructurales.Extras;
 import Facturador.Creacionales.ComprobanteElectronico;
 
 /**
  *
  * @author Diego
  */
-public class AutorizadorSRI {
-    
-    private Esquema esquema;
-    
-    public AutorizadorSRI(Esquema esquema){
-        this.esquema = esquema;
+public class Logo extends Extras{
+
+    public Logo() {
     }
-    
-    public void autorizar(ComprobanteElectronico comprobante){
-        esquema.autorizar(comprobante);
+
+    public Logo(ComprobanteElectronico comprobante) {
+        super(comprobante);
     }
-    
+
 }

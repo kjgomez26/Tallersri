@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package estructurales;
+package Facturador.Comportamiento;
 
+import Facturador.Comportamiento.Esquema;
 import Facturador.Creacionales.ComprobanteElectronico;
 
 /**
  *
  * @author Diego
  */
-public class Logo extends Extras{
-
-    public Logo() {
+public class EsquemaOnline implements Esquema{
+    
+    @Override
+    public void autorizar(ComprobanteElectronico comprobante){
+        
     }
-
-    public Logo(ComprobanteElectronico comprobante) {
-        super(comprobante);
-    }
-
+    
 }

@@ -13,8 +13,8 @@ import Facturador.Creacionales.Factura;
  * @author Gabriel
  */
 public class CreatorFactura extends ComprobantesFactory {
-    private Factura factura;
+    Factura factura;
     public ComprobanteElectronico getComprobante(String tipoComprobante){
-        return factura=new Factura();
+        return new Factura();
     }
 }

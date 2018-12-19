@@ -5,6 +5,14 @@
  */
 package taller09;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+import Facturador.Creacionales.Creator.ComprobantesFactory;
+import Facturador.Creacionales.Creator.CreatorFactura;
+import Facturador.Creacionales.Creator.CreatorGuiaRemision;
+import Facturador.Creacionales.Creator.CreatorNotaCredito;
+import Facturador.Creacionales.Factura;
+import Facturador.Creacionales.GuiaRemision;
+
 /**
  *
  * @author Diego
@@ -16,6 +24,25 @@ public class Taller09 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        //Creo una fabrica para crear un tipo de comprobante
+        ComprobantesFactory fabrica1 = new CreatorFactura();
+        ComprobantesFactory fabrica2 = new CreatorGuiaRemision();
+        ComprobantesFactory fabrica3 = new CreatorNotaCredito();
+
+        ComprobanteElectronico comprobante1 = fabrica1.getComprobante("FACTURA");
+        ComprobanteElectronico comprobante2 = fabrica2.getComprobante("GUIAREMISION");
+        ComprobanteElectronico comprobante3 = fabrica3.getComprobante("NOTACREDITO");
+
+        //llenante los comprobantes con datos basicos
+        comprobante1.setNombreCliente("Juan Vera");
+        comprobante2.setNombreCliente("Diego Muñoz");
+        comprobante3.setNombreCliente("Gomez");
+
+        System.out.println(comprobante1.toString());
+        System.out.println(comprobante2.toString());
+        System.out.println(comprobante3.toString());
+
     }
-    
+
 }

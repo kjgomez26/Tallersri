@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package comportamiento;
+package Facturador.Comportamiento;
 
 import Facturador.Creacionales.ComprobanteElectronico;
 
@@ -11,11 +11,16 @@ import Facturador.Creacionales.ComprobanteElectronico;
  *
  * @author Diego
  */
-public class EsquemaOffline implements Esquema{
+public class AutorizadorSRI {
     
-    @Override
+    private Esquema esquema;
+    
+    public AutorizadorSRI(Esquema esquema){
+        this.esquema = esquema;
+    }
+    
     public void autorizar(ComprobanteElectronico comprobante){
-        
+        esquema.autorizar(comprobante);
     }
     
 }
