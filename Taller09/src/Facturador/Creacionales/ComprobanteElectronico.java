@@ -82,9 +82,4 @@ public abstract class ComprobanteElectronico {
     public void setClaveAcceso(String claveAcceso) {
         this.claveAcceso = claveAcceso;
     }
-
-    
-    
-    
-    
 }
