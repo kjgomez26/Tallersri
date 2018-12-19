@@ -5,6 +5,9 @@
  */
 package taller09;
 
+import Facturador.Comportamiento.AutorizadorSRI;
+import Facturador.Comportamiento.Esquema;
+import Facturador.Comportamiento.EsquemaOnline;
 import Facturador.Creacionales.ComprobanteElectronico;
 import Facturador.Creacionales.Creator.ComprobantesFactory;
 import Facturador.Creacionales.Creator.CreatorFactura;
@@ -51,6 +54,11 @@ public class Taller09 {
         comprobante2 = new Logo(comprobante2);
         System.out.println(comprobante1.getDescripcion());
         System.out.println(comprobante2.getDescripcion());
+        
+        //utilizando strategy
+        Esquema esquema=new EsquemaOnline();
+        AutorizadorSRI autorizador=new AutorizadorSRI(esquema);
+        autorizador.autorizar(comprobante1);
     }
 
 }
