@@ -5,6 +5,8 @@
  */
 package estructurales;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego
@@ -18,12 +20,4 @@ public class Logo extends Extras{
         super(comprobante);
     }
 
-    public ComprobanteElectronico getComprobante() {
-        return comprobante;
-    }
-
-    public void setComprobante(ComprobanteElectronico comprobante) {
-        this.comprobante = comprobante;
-    }
-    
 }

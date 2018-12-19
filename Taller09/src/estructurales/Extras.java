@@ -5,6 +5,8 @@
  */
 package estructurales;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego

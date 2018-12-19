@@ -5,12 +5,15 @@
  */
 package comportamiento;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego
  */
 public class EsquemaOffline implements Esquema{
     
+    @Override
     public void autorizar(ComprobanteElectronico comprobante){
         
     }

@@ -5,6 +5,8 @@
  */
 package comportamiento;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego

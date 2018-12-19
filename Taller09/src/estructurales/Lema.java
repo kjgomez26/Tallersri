@@ -5,6 +5,8 @@
  */
 package estructurales;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego
@@ -16,13 +18,5 @@ public class Lema extends Extras{
     
     public Lema(ComprobanteElectronico comprobante){
         super(comprobante);
-    }
-    
-    public ComprobanteElectronico getComprobante() {
-        return comprobante;
-    }
-
-    public void setComprobante(ComprobanteElectronico comprobante) {
-        this.comprobante = comprobante;
     }
 }

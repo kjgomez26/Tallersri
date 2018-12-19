@@ -5,10 +5,14 @@
  */
 package comportamiento;
 
+import Facturador.Creacionales.ComprobanteElectronico;
+
 /**
  *
  * @author Diego
  */
 public interface Esquema {
+    
+    void autorizar(ComprobanteElectronico comprobante);
     
 }
