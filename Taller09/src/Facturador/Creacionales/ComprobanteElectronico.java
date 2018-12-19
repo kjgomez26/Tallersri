@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author Palacios
  */
-public class ComprobanteElectronico {
+public abstract class ComprobanteElectronico {
     
     protected List<String> detallesEmisor;
     protected String nombreCliente;
@@ -29,6 +29,7 @@ public class ComprobanteElectronico {
         this.fecha = fecha;
         this.detallesEmisor = new LinkedList<>();
     }
+    
 
     public ComprobanteElectronico() {
         this.detallesEmisor = new LinkedList<>();

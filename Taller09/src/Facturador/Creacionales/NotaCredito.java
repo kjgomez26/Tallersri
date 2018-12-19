@@ -3,25 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Facturador.creacionales;
+package Facturador.Creacionales;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  *
  * @author Palacios
  */
 public class NotaCredito extends ComprobanteElectronico{
+    
     private String detalleModificacion;
     private double valorAPagar;
+
 
     public NotaCredito(String detalleModificacion, double valorAPagar, String nombreCliente, long codigo, LocalDate fecha) {
         super(nombreCliente, codigo, fecha);
         this.detalleModificacion = detalleModificacion;
         this.valorAPagar = valorAPagar;
-    }
-
-    public NotaCredito() {
     }
 
     public String getDetalleModificacion() {
@@ -39,7 +39,12 @@ public class NotaCredito extends ComprobanteElectronico{
     public void setValorAPagar(double valorAPagar) {
         this.valorAPagar = valorAPagar;
     }
+
+    public NotaCredito() {
+    }
+
     
+
     
     
     
