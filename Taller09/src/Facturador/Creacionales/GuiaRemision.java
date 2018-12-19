@@ -51,11 +51,14 @@ public class GuiaRemision extends ComprobanteElectronico {
         this.listaProductos = listaProductos;
     }
 
+    public String getDescripcion(){
+        return "{ Guia Remision "+"Nombre cliente: "+this.nombreCliente;
+    }
+
     @Override
     public String toString() {
-        return "GuiaRemision{"+ "nombre del cliente: " + this.nombreCliente+ '}';
+        return "{ Guia Remision "+"Nombre cliente: "+this.nombreCliente+" ";
     }
-    
     
     
     

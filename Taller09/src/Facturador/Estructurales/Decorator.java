@@ -6,30 +6,24 @@
 package Facturador.Estructurales;
 
 import Facturador.Creacionales.ComprobanteElectronico;
+import Facturador.Creacionales.InterfaceComprobante;
 
 /**
  *
- * @author Diego
+ * @author Gabriel
  */
-public abstract class Extras extends ComprobanteElectronico{
+public abstract class Decorator extends ComprobanteElectronico {
+    private ComprobanteElectronico comprobante;
     
-    private ComprobanteElectronico comprobante = null;
-    
-    public Extras(){
-        
-    }
-    
-    public Extras(ComprobanteElectronico comprobante){
-        this.comprobante = comprobante;
+    public Decorator(ComprobanteElectronico comprobante){
+        this.setComprobante(comprobante);
     }
 
-    public ComprobanteElectronico getComprobante() {
+    public InterfaceComprobante getComprobante() {
         return comprobante;
     }
 
     public void setComprobante(ComprobanteElectronico comprobante) {
         this.comprobante = comprobante;
     }
-    
-    
 }

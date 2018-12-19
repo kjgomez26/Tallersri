@@ -36,9 +36,13 @@ public class Factura extends ComprobanteElectronico{
 
     @Override
     public String toString() {
-        return "Factura{" + "nombre del cliente: " + this.nombreCliente;
+        return "{ factura "+"Nombre cliente: "+this.nombreCliente+" ";
     }
 
+
+    public String getDescripcion(){
+        return "{ factura "+"Nombre cliente: "+this.nombreCliente+" ";
+    }
     public double getTotal() {
         return total;
     }

@@ -5,19 +5,26 @@
  */
 package Facturador.Estructurales;
 
-import Facturador.Estructurales.Extras;
 import Facturador.Creacionales.ComprobanteElectronico;
+import Facturador.Creacionales.InterfaceComprobante;
 
 /**
  *
  * @author Diego
  */
-public class Lema extends Extras{
+public class Lema extends Decorator{
 
-    public Lema() {
-    }
-    
     public Lema(ComprobanteElectronico comprobante){
         super(comprobante);
     }
+
+    @Override
+    public String getDescripcion() {
+        return getComprobante().getDescripcion()+ "Nuevo Lema";
+        
+    }
+    
+    
+    
+    
 }

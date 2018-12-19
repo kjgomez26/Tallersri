@@ -43,11 +43,14 @@ public class NotaCredito extends ComprobanteElectronico{
     public NotaCredito() {
     }
 
-    @Override
-    public String toString() {
-        return "NotaCredito{" + "nombre del cliente: " + this.nombreCliente+ '}';
+    public String getDescripcion(){
+        return "{ Nota de credito "+"Nombre cliente: "+this.nombreCliente;
     }
 
+    @Override
+    public String toString() {
+        return "{ Nota de credito "+"Nombre cliente: "+this.nombreCliente;
+    }
     
     
 }

@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author Palacios
  */
-public abstract class ComprobanteElectronico {
+public abstract class ComprobanteElectronico implements InterfaceComprobante{
     
     protected List<String> detallesEmisor;
     protected String nombreCliente;
@@ -22,7 +22,7 @@ public abstract class ComprobanteElectronico {
     protected LocalDate fecha;
     protected String numeroAutorizacion;
     protected String claveAcceso;
-
+    
     public ComprobanteElectronico(String nombreCliente, long codigo, LocalDate fecha) {
         this.nombreCliente = nombreCliente;
         this.codigo = codigo;
@@ -82,11 +82,12 @@ public abstract class ComprobanteElectronico {
     public void setClaveAcceso(String claveAcceso) {
         this.claveAcceso = claveAcceso;
     }
+    
+   public String getDescripcion(){
+       return " ";
+   }
 
-    @Override
-    public String toString() {
-        return "ComprobanteElectronico{" + "detallesEmisor=" + detallesEmisor + ", nombreCliente=" + nombreCliente + ", codigo=" + codigo + ", fecha=" + fecha + ", numeroAutorizacion=" + numeroAutorizacion + ", claveAcceso=" + claveAcceso + '}';
-    }
+    
     
     
 }

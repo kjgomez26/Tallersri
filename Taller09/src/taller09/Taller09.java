@@ -12,6 +12,9 @@ import Facturador.Creacionales.Creator.CreatorGuiaRemision;
 import Facturador.Creacionales.Creator.CreatorNotaCredito;
 import Facturador.Creacionales.Factura;
 import Facturador.Creacionales.GuiaRemision;
+import Facturador.Creacionales.InterfaceComprobante;
+import Facturador.Estructurales.Lema;
+import Facturador.Estructurales.Logo;
 
 /**
  *
@@ -43,6 +46,11 @@ public class Taller09 {
         System.out.println(comprobante2.toString());
         System.out.println(comprobante3.toString());
 
+        //Agregando una decoracion
+        comprobante1 = new Lema(comprobante1);
+        comprobante2 = new Logo(comprobante2);
+        System.out.println(comprobante1.getDescripcion());
+        System.out.println(comprobante2.getDescripcion());
     }
 
 }
